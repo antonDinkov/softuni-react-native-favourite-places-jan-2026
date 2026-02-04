@@ -1,11 +1,24 @@
 import { createContext, useState } from "react";
 import { authService } from "../../services/index.js";
+import { usePersistedState } from "../../hooks/usePersistedState.js";
 
-export const AuthContext = createContext();
+export const AuthContext = createContext({
+    isLoading: false,
+    isAuthenticated: false,
+    error: null,
+    user: null,
+    auth: null,
+    login: async (email, password) => { },
+    clearError: () => { },
+    logout: () => { },
+});
 
 export function AuthProvider({ children }) {
-    const [user, setUser] = useState(null);
-    const [auth, setAuth] = useState(null);
+    const [auth, setAuth] = usePersistedState("auth", {
+        accessToken: null,
+        user: null,
+    });
+
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
 
@@ -13,8 +26,7 @@ export function AuthProvider({ children }) {
         try {
             setIsLoading(true);
             const { user, accessToken } = await authService.login(email, password);
-            setUser(user);
-            setAuth({ accessToken });
+            setAuth({ user, accessToken });
         } catch (err) {
             setError(err.message || 'An error occurred during login');
         } finally {
@@ -23,15 +35,18 @@ export function AuthProvider({ children }) {
     }
 
     const contextValue = {
+        isAuthenticated: !!auth.user,
         isLoading,
         error,
-        user,
+        user: auth.user,
         auth,
         clearError: () => setError(null),
         login,
         logout: () => {
-            setUser(null);
-            setAuth(null);
+            setAuth({
+                accessToken: null,
+                user: null,
+            });
         },
     };
 

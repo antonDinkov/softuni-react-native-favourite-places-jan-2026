@@ -2,8 +2,10 @@ import { View, Text, StyleSheet, Image } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import Button from '../../components/Button';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { useAuth } from '../../contexts/auth/useAuth.js';
 
 const HomeScreen = () => {
+    const { logout } = useAuth();
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.content}>
@@ -42,6 +44,7 @@ const HomeScreen = () => {
                     <Button
                         title="Sign Out"
                         variant="ghost"
+                        onPress={logout}
                         icon={<Ionicons name="log-out-outline" size={20} color="#6366f1" />}
                     />
                 </View>

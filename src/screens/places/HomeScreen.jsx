@@ -4,8 +4,9 @@ import Button from '../../components/Button';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useAuth } from '../../contexts/auth/useAuth.js';
 
-const HomeScreen = () => {
-    const { logout } = useAuth();
+const HomeScreen = ({ navigation }) => {
+    const { logout, user } = useAuth();
+
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.content}>
@@ -14,7 +15,7 @@ const HomeScreen = () => {
                         <Ionicons name="person" size={40} color="#6366f1" />
                     </View>
                     <Text style={styles.welcomeText}>Welcome back,</Text>
-                    <Text style={styles.userName}>Guest</Text>
+                    <Text style={styles.userName}>{user.name}</Text>
                 </View>
 
                 <View style={styles.statsSection}>
@@ -35,6 +36,7 @@ const HomeScreen = () => {
                     <Button
                         title="Add New Place"
                         variant="secondary"
+                        onPress={() => navigation.navigate('CreatePlace')}
                         icon={<Ionicons name="add-circle" size={20} color="#6366f1" />}
                         style={styles.actionButton}
                     />

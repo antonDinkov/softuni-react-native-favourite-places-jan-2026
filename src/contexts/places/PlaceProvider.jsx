@@ -1,0 +1,32 @@
+import { createContext, useState } from "react";
+import { placeService } from "../../services/index.js";
+
+export const PlaceContext = createContext({
+    places: [],
+    createPlace: async (placeData) => { },
+});
+
+export function PlaceProvider({ children }) {
+    const [places, setPlaces] = useState([]);
+
+    const createPlace = async (placeData) => {
+        try {
+            const newPlace = await placeService.create(placeData);
+
+            setPlaces((oldPlaces) => [...oldPlaces, newPlace]);
+        } catch (err) {
+            console.error('Error creating place:', err);
+        }
+    };
+    
+    const contextValue = {
+        places,
+        createPlace,
+    };
+
+    return (
+        <PlaceContext.Provider value={contextValue}>
+            {children}
+        </PlaceContext.Provider>
+    )
+}

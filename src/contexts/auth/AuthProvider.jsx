@@ -5,14 +5,16 @@ export const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
     const [user, setUser] = useState(null);
+    const [auth, setAuth] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
 
     const login = async (email, password) => {
         try {
             setIsLoading(true);
-            const userData = await authService.login(email, password);
-            setUser(userData);
+            const { user, accessToken } = await authService.login(email, password);
+            setUser(user);
+            setAuth({ accessToken });
         } catch (err) {
             setError(err.message || 'An error occurred during login');
         } finally {
@@ -24,9 +26,13 @@ export function AuthProvider({ children }) {
         isLoading,
         error,
         user,
+        auth,
         clearError: () => setError(null),
         login,
-        logout: () => setUser(null),
+        logout: () => {
+            setUser(null);
+            setAuth(null);
+        },
     };
 
     return (

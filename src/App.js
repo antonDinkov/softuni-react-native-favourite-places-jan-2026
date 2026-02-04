@@ -1,14 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 
-import AppNavigation from './navigation/AppNavigation.jsx';
+import AppNavigator from './navigation/AppNavigator.jsx';
 import { NavigationContainer } from '@react-navigation/native';
-import 'dotenv/config';
+import { AuthProvider } from './contexts/auth/AuthProvider.jsx';
 
 export default function App() {
   return (
     <NavigationContainer>
       <StatusBar style="auto" />
-      <AppNavigation />
+      <AuthProvider>
+        <AppNavigator />
+      </AuthProvider>
     </NavigationContainer>
   );
 }

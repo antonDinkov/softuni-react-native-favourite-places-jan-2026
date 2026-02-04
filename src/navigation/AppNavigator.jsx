@@ -2,7 +2,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import LoginScreen from "../screens/auth/LoginScreen.jsx";
 
-export default function AppNavigation() {
+export default function AppNavigator() {
     const Stack = createNativeStackNavigator();
 
     return (

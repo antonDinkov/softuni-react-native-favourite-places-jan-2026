@@ -29,6 +29,7 @@ const HomeScreen = ({ navigation }) => {
                 <View style={styles.actionsSection}>
                     <Button
                         title="View My Places"
+                        onPress={() => navigation.navigate('ListPlaces')}
                         icon={<Ionicons name="list" size={20} color="#fff" />}
                         style={styles.actionButton}
                     />

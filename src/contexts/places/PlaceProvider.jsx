@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { placeService } from "../../services/index.js";
 
 export const PlaceContext = createContext({
@@ -9,6 +9,12 @@ export const PlaceContext = createContext({
 export function PlaceProvider({ children }) {
     const [places, setPlaces] = useState([]);
 
+    useEffect(() => {
+        placeService.getAll()
+            .then((data) => setPlaces(data))
+            .catch((err) => console.error('Error fetching places:', err));
+    }, []);
+
     const createPlace = async (placeData) => {
         try {
             const newPlace = await placeService.create(placeData);
@@ -18,7 +24,7 @@ export function PlaceProvider({ children }) {
             console.error('Error creating place:', err);
         }
     };
-    
+
     const contextValue = {
         places,
         createPlace,

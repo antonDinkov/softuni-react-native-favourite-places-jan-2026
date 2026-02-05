@@ -4,7 +4,7 @@ import { launchImageLibraryAsync, requestMediaLibraryPermissionsAsync, MediaType
 
 
 export default function ImagePicker({
-    styles = {},
+    style = {},
     imageUri,
     onImagePicked,
 }) {
@@ -36,7 +36,7 @@ export default function ImagePicker({
     }
 
     return (
-        <View style={[styles.container, styles]}>
+        <View style={[styles.container, style]}>
             <TouchableOpacity style={styles.picker} onPress={pickImageHandler}>
                 {imageUri
                     ? <Image source={{ uri: imageUri }} style={styles.image} />

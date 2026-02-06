@@ -46,6 +46,18 @@
       "description": "gagag",
       "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/981b4e37-064e-4094-89cc-23485c992379.jpeg",
       "id": 5
+    },
+    {
+      "title": "Title mine",
+      "description": "this is the place I chose",
+      "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/ab0e10fb-3310-4311-856a-002ace59df71.jpeg",
+      "id": 6
+    },
+    {
+      "title": "new place",
+      "description": "",
+      "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/acdf8c1b-02db-451a-9055-450ad4044fc4.jpeg",
+      "id": 7
     }
   ]
 }

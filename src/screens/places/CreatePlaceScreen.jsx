@@ -13,15 +13,18 @@ import Button from '../../components/Button';
 import { usePlace } from '../../contexts/places/usePlaces.js';
 import ImagePicker from '../../components/ImagePicker.jsx';
 import CameraCapture from '../../components/CameraCapture.jsx';
+import LocationPicker from '../../components/LocationPicker.jsx';
 
 export function CreatePlaceScreen({ navigation }) {
     const { createPlace } = usePlace();
+    const [address, setAddress] = useState('');
+    const [coords, setCoords] = useState({});
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
     const [imageUri, setImageUri] = useState(null);
 
     const savePlaceHandler = async () => {
-        await createPlace({ title, description, imageUri });
+        await createPlace({ title, description, imageUri, address, coords });
 
         navigation.goBack();
     };
@@ -41,7 +44,6 @@ export function CreatePlaceScreen({ navigation }) {
             >
                 <View style={styles.section}>
                     <Text style={styles.sectionTitle}>Photo</Text>
-                    {/* TODO ImagePicker  */}
                     <ImagePicker onImagePicked={setImageUri} imageUri={imageUri} />
                     <CameraCapture onPhotoTaken={setImageUri} />
                 </View>
@@ -69,13 +71,15 @@ export function CreatePlaceScreen({ navigation }) {
 
                     {/* <Text style={styles.errorText}>Location error</Text> */}
 
-                    {/* TODO LocationPicker*/}
+                    <LocationPicker onLocationPicked={setAddress} onCoordsPicked={setCoords} coords={coords} />
 
                     {/* Address preview */}
-                    {/* <View style={styles.addressPreview}>
-              <Ionicons name="location" size={16} color="#6366f1" />
-              <Text style={styles.addressText}>address</Text>
-            </View>*/}
+                    {address && (
+                        <View style={styles.addressPreview}>
+                            <Ionicons name="location" size={16} color="#6366f1" />
+                            <Text style={styles.addressText}>{address}</Text>
+                        </View>
+                    )}
                 </View>
 
                 <Button

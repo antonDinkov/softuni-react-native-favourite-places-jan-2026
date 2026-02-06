@@ -48,20 +48,9 @@
       "id": 5
     },
     {
-<<<<<<< HEAD
       "title": "Title mine",
       "description": "this is the place I chose",
       "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/ab0e10fb-3310-4311-856a-002ace59df71.jpeg",
-      "id": 6
-    },
-    {
-      "title": "new place",
-      "description": "",
-      "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/acdf8c1b-02db-451a-9055-450ad4044fc4.jpeg",
-=======
-      "title": "asdhs",
-      "description": "baba",
-      "imageUri": "file:///var/mobile/Containers/Data/Application/7F965A13-02E9-4639-B44C-343CA4B66E49/Library/Caches/ExponentExperienceData/@anonymous/softuni-react-native-favourite-places-jan-2026-0fc5b575-e9aa-4366-afce-8ccd2575a082/ImagePicker/242AA800-CB26-4753-A93D-0B71AA5AE966.jpg",
       "id": 6
     },
     {
@@ -69,8 +58,23 @@
       "description": "jajaja",
       "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/b308c039-7d3c-4641-9b45-5d4d4f843773.jpeg",
       "address": "10, ulitsa \"Professor Petar Nikov\", Sofia, Sofia City Province, Bulgaria",
->>>>>>> 848f68c7716cf8014b56f1a5588fdc33f59561e7
       "id": 7
+    },
+    {
+      "title": "caffe",
+      "description": "phu quoc caffe",
+      "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/f6bc87cf-0844-4bf9-89df-733f522d5e86.jpeg",
+      "address": "6XP8+22X, ĐT45, Thành phố Phú Quốc, Kiên Giang, Vietnam",
+      "coords": {
+        "accuracy": 11.270999908447266,
+        "longitude": 103.9652887,
+        "altitude": 2.200000047683716,
+        "heading": 0,
+        "latitude": 10.23521,
+        "altitudeAccuracy": 1,
+        "speed": 0
+      },
+      "id": 8
     }
   ]
 }

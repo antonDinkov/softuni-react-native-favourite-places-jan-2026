@@ -12,7 +12,6 @@ const PlaceCardWithGesture = ({
     const deleteGesture = Gesture.Fling()
         .direction(Directions.LEFT)
         .onEnd((event) => {
-            console.log(event);
             onDelete?.(item.id);
         });
 

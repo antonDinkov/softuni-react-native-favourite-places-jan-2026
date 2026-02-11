@@ -21,21 +21,6 @@
   ],
   "places": [
     {
-      "title": "test",
-      "description": "gagaga",
-      "id": 1
-    },
-    {
-      "title": "tteat2",
-      "description": "jsjshjs",
-      "id": 2
-    },
-    {
-      "title": "nznsh",
-      "description": "whhshsj",
-      "id": 3
-    },
-    {
       "title": "photo",
       "description": "hahahahah",
       "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/4036259b-853a-4e03-ad43-72609d9bdb09.jpeg",
@@ -59,6 +44,14 @@
       "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/b308c039-7d3c-4641-9b45-5d4d4f843773.jpeg",
       "address": "10, ulitsa \"Professor Petar Nikov\", Sofia, Sofia City Province, Bulgaria",
       "id": 7
+    },
+    {
+      "title": "Dirty Keyboard",
+      "description": "vshshs",
+      "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/c33d56bf-854e-4643-bdfa-cf93e1be3b8c.jpeg",
+      "address": "",
+      "coords": {},
+      "id": 8
     }
   ]
 }

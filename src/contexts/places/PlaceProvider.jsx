@@ -5,6 +5,7 @@ export const PlaceContext = createContext({
     places: [],
     async createPlace(placeData) { },
     getPlaceById(placeId) { },
+    deletePlace(placeId) { },
 });
 
 export function PlaceProvider({ children }) {
@@ -30,10 +31,20 @@ export function PlaceProvider({ children }) {
         return places.find(p => p.id === placeId);
     }
 
+    const deletePlace = async (placeId) => {
+        try {
+            await placeService.deletePlace(placeId);
+            setPlaces((oldPlaces) => oldPlaces.filter(place => place.id !== placeId));
+        } catch (err) {
+            console.error('Error deleting place:', err);
+        }
+    }
+
     const contextValue = {
         places,
         createPlace,
         getPlaceById,
+        deletePlace,
     };
 
     return (

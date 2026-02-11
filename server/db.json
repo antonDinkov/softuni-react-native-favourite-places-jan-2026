@@ -21,21 +21,6 @@
   ],
   "places": [
     {
-      "title": "test",
-      "description": "gagaga",
-      "id": 1
-    },
-    {
-      "title": "tteat2",
-      "description": "jsjshjs",
-      "id": 2
-    },
-    {
-      "title": "nznsh",
-      "description": "whhshsj",
-      "id": 3
-    },
-    {
       "title": "photo",
       "description": "hahahahah",
       "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/4036259b-853a-4e03-ad43-72609d9bdb09.jpeg",

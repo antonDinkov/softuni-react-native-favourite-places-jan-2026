@@ -1,97 +1,99 @@
 {
-  "users": [
-    {
-      "email": "ivo@abv.bg",
-      "password": "$2a$10$Ni5wlfs9d1NGXRDkkO6K/.nCiARWmoP/s93sfVuchQCDjJFnoL33S",
-      "name": "Ivo",
-      "id": 1
-    },
-    {
-      "email": "demo@example.com",
-      "password": "$2a$10$kSM4oC1zHxNNn49VyUiIuedPbBgJ2yGLrRkt/TFhxYyMYid/Q5PA.",
-      "name": "Demo User",
-      "id": 2
-    },
-    {
-      "email": "peaho@abv.bg",
-      "password": "$2a$10$27NwxB2.U39Dca7qQ8Hr8OlCTSmvISxKwl1BT12gtTCtAK.PJYzd2",
-      "name": "Peaho",
-      "id": 3
-    }
-  ],
-  "places": [
-    {
-      "title": "photo",
-      "description": "hahahahah",
-      "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/4036259b-853a-4e03-ad43-72609d9bdb09.jpeg",
-      "id": 4
-    },
-    {
-      "title": "Dirty Keyboard",
-      "description": "vshshs",
-      "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/c33d56bf-854e-4643-bdfa-cf93e1be3b8c.jpeg",
-      "address": "",
-      "coords": {},
-      "id": 8
-    },
-    {
-      "title": "Title mine",
-      "description": "this is the place I chose",
-      "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/ab0e10fb-3310-4311-856a-002ace59df71.jpeg",
-      "id": 6
-    },
-    {
-      "title": "teat",
-      "description": "jajaja",
-      "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/b308c039-7d3c-4641-9b45-5d4d4f843773.jpeg",
-      "address": "10, ulitsa \"Professor Petar Nikov\", Sofia, Sofia City Province, Bulgaria",
-      "id": 7
-    },
-    {
-      "title": "caffe",
-      "description": "phu quoc caffe",
-      "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/f6bc87cf-0844-4bf9-89df-733f522d5e86.jpeg",
-      "address": "6XP8+22X, ĐT45, Thành phố Phú Quốc, Kiên Giang, Vietnam",
-      "coords": {
-        "accuracy": 11.270999908447266,
-        "longitude": 103.9652887,
-        "altitude": 2.200000047683716,
-        "heading": 0,
-        "latitude": 10.23521,
-        "altitudeAccuracy": 1,
-        "speed": 0
-      },
-      "id": 8
-    },
-    {
-      "title": "some title",
-      "description": "demo photo and location",
-      "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/461897d3-8685-44e8-b8ab-627203e73a6d.jpeg",
-      "address": "6XP8+22X, ĐT45, Thành phố Phú Quốc, Kiên Giang, Vietnam",
-      "coords": {
-        "accuracy": 27.503000259399414,
-        "longitude": 103.9652772,
-        "altitude": 2.200000047683716,
-        "heading": 0,
-        "latitude": 10.235217,
-        "altitudeAccuracy": 1,
-        "speed": 0
-      },
-      "id": 9
-      "title": "KBD",
-      "description": "bshhss",
-      "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/9964b826-38f9-44a0-8e32-670f305b9cc2.jpeg",
-      "address": "",
-      "coords": {},
-      "id": 12
-    },
-    {
-      "title": "KBD",
-      "description": "bshhss",
-      "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/9964b826-38f9-44a0-8e32-670f305b9cc2.jpeg",
-      "address": "",
-      "coords": {},
-      "id": 13
-    }
-  ]
+    "users": [
+        {
+            "email": "ivo@abv.bg",
+            "password": "$2a$10$Ni5wlfs9d1NGXRDkkO6K/.nCiARWmoP/s93sfVuchQCDjJFnoL33S",
+            "name": "Ivo",
+            "id": 1
+        },
+        {
+            "email": "demo@example.com",
+            "password": "$2a$10$kSM4oC1zHxNNn49VyUiIuedPbBgJ2yGLrRkt/TFhxYyMYid/Q5PA.",
+            "name": "Demo User",
+            "id": 2
+        },
+        {
+            "email": "peaho@abv.bg",
+            "password": "$2a$10$27NwxB2.U39Dca7qQ8Hr8OlCTSmvISxKwl1BT12gtTCtAK.PJYzd2",
+            "name": "Peaho",
+            "id": 3
+        }
+    ],
+    "places": [
+        {
+            "title": "photo",
+            "description": "hahahahah",
+            "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/4036259b-853a-4e03-ad43-72609d9bdb09.jpeg",
+            "id": 4
+        },
+        {
+            "title": "Dirty Keyboard",
+            "description": "vshshs",
+            "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/c33d56bf-854e-4643-bdfa-cf93e1be3b8c.jpeg",
+            "address": "",
+            "coords": {},
+            "id": 8
+        },
+        {
+            "title": "Title mine",
+            "description": "this is the place I chose",
+            "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/ab0e10fb-3310-4311-856a-002ace59df71.jpeg",
+            "id": 6
+        },
+        {
+            "title": "teat",
+            "description": "jajaja",
+            "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/b308c039-7d3c-4641-9b45-5d4d4f843773.jpeg",
+            "address": "10, ulitsa \"Professor Petar Nikov\", Sofia, Sofia City Province, Bulgaria",
+            "id": 7
+        },
+        {
+            "title": "caffe",
+            "description": "phu quoc caffe",
+            "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/f6bc87cf-0844-4bf9-89df-733f522d5e86.jpeg",
+            "address": "6XP8+22X, ĐT45, Thành phố Phú Quốc, Kiên Giang, Vietnam",
+            "coords": {
+                "accuracy": 11.270999908447266,
+                "longitude": 103.9652887,
+                "altitude": 2.200000047683716,
+                "heading": 0,
+                "latitude": 10.23521,
+                "altitudeAccuracy": 1,
+                "speed": 0
+            },
+            "id": 8
+        },
+        {
+            "title": "some title",
+            "description": "demo photo and location",
+            "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/461897d3-8685-44e8-b8ab-627203e73a6d.jpeg",
+            "address": "6XP8+22X, ĐT45, Thành phố Phú Quốc, Kiên Giang, Vietnam",
+            "coords": {
+                "accuracy": 27.503000259399414,
+                "longitude": 103.9652772,
+                "altitude": 2.200000047683716,
+                "heading": 0,
+                "latitude": 10.235217,
+                "altitudeAccuracy": 1,
+                "speed": 0
+            },
+            "id": 178
+        },
+        {
+            "title": "KBD",
+            "description": "bshhss",
+            "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/9964b826-38f9-44a0-8e32-670f305b9cc2.jpeg",
+            "address": "",
+            "coords": {},
+            "id": 12
+        },
+        {
+            "title": "KBD",
+            "description": "bshhss",
+            "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/9964b826-38f9-44a0-8e32-670f305b9cc2.jpeg",
+            "address": "",
+            "coords": {},
+            "id": 13
+        }
+    ]
 }

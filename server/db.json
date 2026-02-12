@@ -35,7 +35,6 @@
       "id": 8
     },
     {
-<<<<<<< HEAD
       "title": "Title mine",
       "description": "this is the place I chose",
       "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/ab0e10fb-3310-4311-856a-002ace59df71.jpeg",
@@ -79,7 +78,6 @@
         "speed": 0
       },
       "id": 9
-=======
       "title": "KBD",
       "description": "bshhss",
       "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/9964b826-38f9-44a0-8e32-670f305b9cc2.jpeg",
@@ -94,7 +92,6 @@
       "address": "",
       "coords": {},
       "id": 13
->>>>>>> b5bd804a29f6388bcd3089839133ed403419c4b4
     }
   ]
 }

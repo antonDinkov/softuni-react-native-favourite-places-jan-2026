@@ -75,6 +75,22 @@
         "speed": 0
       },
       "id": 8
+    },
+    {
+      "title": "some title",
+      "description": "demo photo and location",
+      "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/461897d3-8685-44e8-b8ab-627203e73a6d.jpeg",
+      "address": "6XP8+22X, ĐT45, Thành phố Phú Quốc, Kiên Giang, Vietnam",
+      "coords": {
+        "accuracy": 27.503000259399414,
+        "longitude": 103.9652772,
+        "altitude": 2.200000047683716,
+        "heading": 0,
+        "latitude": 10.235217,
+        "altitudeAccuracy": 1,
+        "speed": 0
+      },
+      "id": 9
     }
   ]
 }

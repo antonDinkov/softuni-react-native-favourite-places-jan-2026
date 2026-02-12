@@ -21,33 +21,21 @@
   ],
   "places": [
     {
-      "title": "test",
-      "description": "gagaga",
-      "id": 1
-    },
-    {
-      "title": "tteat2",
-      "description": "jsjshjs",
-      "id": 2
-    },
-    {
-      "title": "nznsh",
-      "description": "whhshsj",
-      "id": 3
-    },
-    {
       "title": "photo",
       "description": "hahahahah",
       "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/4036259b-853a-4e03-ad43-72609d9bdb09.jpeg",
       "id": 4
     },
     {
-      "title": "me",
-      "description": "gagag",
-      "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/981b4e37-064e-4094-89cc-23485c992379.jpeg",
-      "id": 5
+      "title": "Dirty Keyboard",
+      "description": "vshshs",
+      "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/c33d56bf-854e-4643-bdfa-cf93e1be3b8c.jpeg",
+      "address": "",
+      "coords": {},
+      "id": 8
     },
     {
+<<<<<<< HEAD
       "title": "Title mine",
       "description": "this is the place I chose",
       "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/ab0e10fb-3310-4311-856a-002ace59df71.jpeg",
@@ -91,6 +79,22 @@
         "speed": 0
       },
       "id": 9
+=======
+      "title": "KBD",
+      "description": "bshhss",
+      "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/9964b826-38f9-44a0-8e32-670f305b9cc2.jpeg",
+      "address": "",
+      "coords": {},
+      "id": 12
+    },
+    {
+      "title": "KBD",
+      "description": "bshhss",
+      "imageUri": "file:///data/user/0/host.exp.exponent/cache/ImagePicker/9964b826-38f9-44a0-8e32-670f305b9cc2.jpeg",
+      "address": "",
+      "coords": {},
+      "id": 13
+>>>>>>> b5bd804a29f6388bcd3089839133ed403419c4b4
     }
   ]
 }
